@@ -1,0 +1,40 @@
+<div class="header-main">
+    <div class="header-grid">
+        <div class="header-logo">
+            <a class="navbar-brand" href="#!">
+                <img src="images/logo/logo.png" class="logo-width" alt="" title="">
+                 <span class="logobrand">Dr. Thimma Reddy</span>
+            </a>
+        </div>
+        <div class="header-menu menu-main">
+            <div class="topnav" id="myTopnav">
+                <a href="#!">Home</a>
+                <a href="index.html">News</a>
+                <a href="#!">Contact</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Dropdown
+                    <i class="fa-down fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#!">Link 1</a>
+                    <a href="#!">Link 2</a>
+                    <a href="#!">Link 3</a>
+                  </div>
+                </div>
+                <a href="#!">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+              
+              <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+              </script>
+        </div>
+    </div>
+</div>

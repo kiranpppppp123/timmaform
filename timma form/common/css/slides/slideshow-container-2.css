@@ -1,0 +1,120 @@
+/* Slider */
+.slideshow-container-2 .slider {
+    background-color: white;
+}
+
+.slideshow-container-2 .slick-slide {
+    margin: 0px 20px;
+}
+
+.slideshow-container-2 .slick-slide img {
+    width: 100%;
+}
+
+.slideshow-container-2 .slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slideshow-container-2 .slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slideshow-container-2 .slick-list:focus
+{
+    outline: none;
+}
+.slideshow-container-2 .slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slideshow-container-2 .slick-slider .slick-track,
+.slideshow-container-2 .slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slideshow-container-2 .slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slideshow-container-2 .slick-track:before,
+.slideshow-container-2 .slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slideshow-container-2 .slick-track:after
+{
+    clear: both;
+}
+.slideshow-container-2 .slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slideshow-container-2 .slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slideshow-container-2 .slick-slide
+{
+    float: right;
+}
+.slideshow-container-2 .slick-slide img
+{
+    display: block;
+}
+.slideshow-container-2 .slick-slide.slick-loading img
+{
+    display: none;
+}
+.slideshow-container-2 .slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slideshow-container-2 .slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slideshow-container-2 .slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slideshow-container-2 .slick-arrow.slick-hidden {
+    display: none;
+}
+/* Slider */

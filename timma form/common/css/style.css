@@ -1,0 +1,816 @@
+body{
+    font-family: "Graphik Regular","Arial",Sans-Serif;
+    font-size: 1rem;
+    line-height: 1.6em;
+    color: #000;
+    background-color: #fff;
+}
+.navbar-fixed-top {
+    top: 0px;
+    border-bottom: 1px solid #3ebdec;
+    position: fixed;
+    width: 99%;
+    z-index: 2;
+}
+.header-main {
+    height: 4rem;
+    background: #ef812c;
+    width: 100%;
+    z-index: 1;
+}
+.header-logo {
+    justify-self: left;
+}
+.header-logo a {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 3px 2px #dd7b2f;
+    letter-spacing: 1.2px;
+    /*background: white;*/
+}
+.header-logo .logo-width {
+    width: 57px;
+    /*margin-top: 0.8rem;*/
+    background: white;
+}
+.header-main .header-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+.header-main .header-menu {
+    justify-self: end;
+    margin-bottom: auto;
+    padding-top: 1.4rem;
+}
+/* .header-menu .menu-main ul {
+    list-style: none; 
+    display: flex;
+    margin-top: 2.5rem;
+} */
+/* .header-menu .menu-main ul li {
+    font-size: 14px;
+    margin-right: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 900;
+} */
+/* .header-menu .menu-main ul li:hover {
+    color: #004dff;
+} */
+/* Header End */
+
+/*Scrollbar Effect*/
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg,#df9653,#e27c22);
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(224 137 59);
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c2900,#201c2900 1px,#0071a300 0,#0071a363);
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+/*Scrollbar Effect*/
+
+/* Common Areas */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+p {
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 3vw;
+    font-weight: 800;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    text-shadow: 3px 2px #e5b9a6;
+}
+h3 {
+    font-size: 2.8vw;
+    text-transform: capitalize;
+}
+h4 {
+    font-size: 1.5vw;
+    line-height: initial;
+}
+.bg-white-clr {
+    background-color: white;
+}
+.bg-smoke-clr {
+    background-color: #a2ddf378;
+}
+.bg-black-clr {
+    /* background-color: #000000f5; */
+    background: linear-gradient(to right, #2d5c6e, #66460d);
+}
+.btn {
+    width: 180px;
+    text-align: center;
+    padding: 5px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    width: fit-content;
+    box-shadow: 5px 5px #0071a3;
+    font-weight: 600;
+}
+.read-more-btn {
+    color: #004dff;
+    font-weight: 600;
+    font-variant: all-small-caps;
+    border-bottom-style: groove;
+    border-bottom-color: #004dff9c;
+}
+.read-more-btn::after {
+    content: "\27A3";
+    margin-left: 1vw;
+}
+/* Common Areas */
+
+/* Hero Section */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.first-sec {
+    margin-top: 1rem;
+}
+.first-sec-bottom {
+    margin-bottom: 2rem;
+}
+.pad-lr {
+    padding-left: 2.20rem;
+    padding-right: 2.20rem;
+}
+.pad-tb {
+    padding-top: 2.20rem;
+    padding-bottom: 2.20rem;
+}
+.hero-content .category {
+    margin-bottom: 0.65rem;
+    font-size: 1.5vw;
+    line-height: 1.4em;
+    letter-spacing: .107em;
+    padding-left: 0.3vw;
+}
+/* .hero-content .category {
+    border-style: solid;
+    border-image: linear-gradient(to right, #64cbf1, #fba91c);
+    border-image-slice: 21;
+    border-width: 0.4vw;
+} */
+.hero-image {
+    text-align: center;
+    align-self: end;
+}
+.hero-image img{
+     width: 40vw;
+     /* max-width: fit-content; */
+}
+.h1-page-title {
+    font-size: 3.5vw;
+    word-break: break-word;
+    margin: 0 0 0.3em 0;
+    line-height: 1em;
+    font-weight: 900;
+    text-shadow: 3px 2px #e5b9a6;
+    letter-spacing: 1.2px;
+}
+/* Hero Section */
+
+/* Home Service Card Section */
+.service-card-list {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+}
+.service-card-list .pad-lr-card {
+    padding-right: 1.2rem;
+}
+.service-card-list .card ul {
+    list-style: none; 
+    padding: 0px;
+    font-size: 13px;
+    font-weight: 900;
+    inline-size: max-content;
+    letter-spacing: 1px;
+}
+.service-card-list .card ul li:hover {
+    color: #0071a3;
+    cursor: pointer;
+}
+.service-card-list .card ul li::before {
+    content: "\27A3";
+    margin-right: 1vw;
+ }
+.service-card-list .pad-lr-card .pad-lr {
+    padding-left: 1.2rem; 
+    padding-right: 1.2rem;
+}
+.service-card-list > div > .card {
+    border: 1px solid #e27c22;
+    border-top-width: thick;
+}
+.service-card-list > div > .card h5 { 
+    font-size: 1.25rem;
+    border-bottom: 1px solid;
+    letter-spacing: 1px;
+}
+/* Home Service Card Section */
+
+/* List of services Btn Section */
+.service-btns {
+    display: -webkit-inline-box;
+}
+.service-btns > div h4::after {
+    content: "\27A3";
+    margin-left: 1vw;
+}
+.service-btns > div {
+    box-shadow: 4px 8px 10px 2px #e27c22;
+    background: #0071a3;
+    border-top: groove;
+    border-top-color: indigo;
+    color: white;
+    width: 420px;
+    margin-right: 1.5rem;
+}
+.scroll-off {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+}
+.scroll-off > div {
+    width: auto !important;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.service-btns .card > div ul {
+    list-style: none;
+    padding: 0px;
+    font-size: 13px;
+    font-weight: 900;
+}
+.service-btns .card > div ul li::before {
+    content: "\27A3";
+    margin-right: 1vw;
+}
+.scroll-card {
+    overflow-x: scroll; 
+    padding-bottom: 2rem;
+}
+.service-btns > div:hover {
+    background: #fba91c;
+    box-shadow: 4px 8px 10px 2px #0071a3;
+    color: black;
+}
+.service-btns .card .card-video .yt-iframe {
+    width: 99% !important;
+    /* height: auto !important; */
+    height: 205px !important;
+}
+/* List of services Btn Section */
+
+/* Award Winnning Section */
+.outlook-bg {
+    padding-bottom: 2px;
+    box-shadow: 0px 0px 13px 2px #bd9f9f;
+}
+.outlook-bg-clr {
+    background: #bf1e2e; 
+    color: antiquewhite;
+}
+.outlook-bg-clr:hover {
+    background: #d31f01;
+    color: white;
+}
+.outlook-bg-clr .outlook-grid .outlook-logo {
+    background: #ffffff;
+    text-align: center;
+    border: 1px solid #d31f01a3;
+}
+.toi-bg-clr {
+    background: #520052; 
+    color: antiquewhite;  
+}
+.toi-bg-clr:hover {
+    background: #d31f01;
+    color: white;
+}
+.toi-bg-clr .outlook-grid .outlook-logo {
+    background: #d31f01;
+    text-align: center;
+    border: 1px solid #ffffff38;
+}
+.toi-pad-tb {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.bw-bg-clr {
+    background: #b62027;
+    color: white;
+}
+.bw-bg-clr:hover {
+    background: #d31f01;
+    color: white;
+}
+.bw-bg-clr .outlook-grid .outlook-logo {
+    background: #ffffff;
+    text-align: center;
+    border: 1px solid #d31f01a3;
+}
+.outlook-grid {
+    display: grid; grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+.outlook-logo img {
+    width: 16rem; border-top: 10px solid transparent; 
+}
+.outlook-title {
+    display: grid;grid-template-rows: 1fr 1fr; margin: auto auto auto 20px;
+}
+.outlook-title h6 {
+    margin: auto; font-size: 26px; font-variant: all-small-caps;
+}
+.outlook-title p {
+    /* margin: auto; */ font-size: 16px;
+}
+.outlook-grid .outbound-link {
+    margin: auto; background: aliceblue; color: black; margin-right: 0px;
+}
+.outlook-grid .outbound-link p {
+    font-size: 12px; padding: 0rem 3rem 0rem 3rem; inline-size: max-content; font-weight: 600;
+}
+/* Award Winnning Section */
+
+/* Blog Section */
+.scroll-off .blog-card {
+    margin-right: 2rem;
+    border: 1px solid #0071a3;
+    border-top: 5px solid #fba91c;
+    background: #0071a3;
+    color: white;
+    box-shadow: 4px 8px 10px 2px #e27c22;
+}
+.scroll-off .blog-card:hover {
+    background: #fba91c;
+    color: black;
+    border: 1px solid #fba91c;
+    border-top: 5px solid #fba91c;
+}
+.scroll-off .blog-card .blog-card-img {
+    width: 100%;
+}
+.scroll-off .blog-card .blog-card-img img {
+    width: 100%;
+}
+.scroll-off .blog-card .blog-card-text h4 {
+    font-weight: 900;
+}
+.scroll-off .blog-card .blog-card-text h5 {
+    font-weight: 900;
+    text-decoration: underline;
+    margin: auto;
+    letter-spacing: 1.2px;
+}
+.scroll-off .blog-card .blog-card-text {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+/* Blog Section */
+
+/* Footer Section */
+.footer {
+    border-top: 5px solid #fba91c;
+}
+.footer-grid {
+    color: white; 
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-grid-2 {
+    display: grid; grid-template-columns: 1fr 1fr;
+}
+.footer-grid .footer-clm h3 {
+    font-size: 20px; border-bottom: 1px solid #fba91c; 
+    color: #fba91c;
+    letter-spacing: 1.2px;
+}
+.footer-grid .footer-clm .footer-brand {
+    display: block;
+}
+.footer-grid .footer-clm .footer-brand img {
+    width: 55px; height: fit-content;
+}
+.footer-grid .footer-clm .footer-brand h4 {
+    font-size: 14px; color: #1ca9d9;
+}
+.footer-grid .footer-clm p {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    margin: auto;
+}
+.footer-grid .footer-clm p:hover {
+    color: #fba91c;
+    cursor: pointer;
+}
+.footer-grid .footer-clm {
+    padding-right: 2rem;
+}
+.contact-links h5 {
+    margin: auto;
+    letter-spacing: 1.2px;
+}
+.copyright {
+    font-size: 11px;
+    color: wheat;
+    text-align: center;
+    letter-spacing: 0.8px;
+    /* padding-top: 2.2rem; */
+    background-color: #ffffff1c;
+    border-top: 1px solid;
+}
+/* Footer Section */
+
+/*Google Form*/
+
+.form-font .card span {
+    font-weight: bolder;
+}
+.form-font .card {
+    border: 1px solid #e27c22;
+    border-top-width: thick;
+    background: wheat;
+    /*width: fit-content;*/
+    padding-bottom: 2.20rem;
+    padding-top: 2.20rem;
+}
+.form-font .card .input-box {
+    width: 90%;
+}
+.form-font .card > input {
+    border-radius: 2px;
+    border-color: transparent;
+    border-left: solid 5px #ef812c;
+    border-bottom: solid 1px black;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.form-font {
+    font-size: 1rem;
+    line-height: 1.6em;
+    color: #000;
+}
+/*.form-bg {
+    /*background: url();*/
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right;*/
+    /*background-color: #85a3d9; }
+    */
+
+.form-sec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-sec-grid .slideshow-container {
+    padding-top: 0px;
+}
+/*Google Form*/
+
+
+@media (min-width:0px) and (max-width:320px){
+    .header-logo .logobrand {
+        display: none;
+       
+    }
+    
+    .pad-lr {
+        padding-left: 0.50rem;
+        padding-right: 0.50rem;
+    }
+    p {
+        font-size: 4.85vw;
+    }
+    .form-sec-grid {
+        display: block;
+    }
+}
+
+@media (min-width:0px) and (max-width:425px){
+    .header-logo .logobrand {
+        font-size: medium;
+        height: fit-content;
+        width: fit-content;
+    }
+    .hero-grid {
+     display: block;
+    }
+    .hero-content .category {
+     font-size: 3.5vw;
+    }
+    .hero-image img {
+        width: 80vw;
+    }
+    .h1-page-title{
+        font-size: 6.5vw;
+        white-space: break-spaces;
+    }
+    h2 {
+        font-size: 5.15vw;
+    }
+    h3 {
+        font-size: 5vw;
+    }
+    h4 {
+        font-size: 4.25vw;
+    }
+    
+    /* Home Service Card Section */
+    .service-card-list {
+        display: grid; grid-template-columns: 1fr;
+    }
+    .service-card-list .pad-lr-card {
+        padding-right: 0;
+        padding-bottom: 2.2rem;
+    }
+    /* Home Service Card Section */ 
+        
+    /* List of services Btn Section */
+    .service-btns > div {
+        width: 300px;
+        margin-right: 0.5rem;
+    }
+    /* List of services Btn Section */
+    
+    /* Award Winnning Section */
+    .outlook-grid {
+        display: block;
+    }
+    .outlook-logo img {
+        margin-left: auto;
+    }
+    .outlook-title {
+        display: block;
+        margin: auto;
+    }
+    .outlook-grid .outbound-link {
+        padding: 0px;
+        background: antiquewhite;
+    }
+    .outlook-grid .outbound-link p {
+        background: antiquewhite;
+        padding-top: 2vw; padding-bottom: 1vw;
+    }
+    /* Award Winnning Section */
+    .scroll-off {
+        display: block !important; 
+    }
+
+    /* Blog Section */
+    .scroll-off .blog-card {
+        margin-right: 0rem;
+    }
+    /* Blog Section */
+
+    /* Footer Section */
+    .footer-grid {
+        display: block;
+    }
+    .footer-grid-2 {
+        display: block;
+    }
+    /* Footer Section */
+
+    /*Google Form*/
+    .form-bg {
+        background: none;
+    }
+    .first-sec-bottom {
+        margin-bottom: 0rem;
+    }
+    .first-sec {
+        margin-top: 0rem;
+    }
+    .form-sec-grid {
+        display: block;
+    }
+    /*Google Form*/
+}
+@media (min-width:321px) and (max-width:425px){
+    .pad-lr {
+        padding-left: 0.50rem;
+        padding-right: 0.50rem;
+    }
+    
+    p {
+        font-size: 4.10vw;
+    }
+
+    .h1-page-title {
+        white-space: break-spaces;
+    }
+    .form-sec-grid {
+        display: block;
+    }
+}
+
+@media (min-width:426px) and (max-width:641px){
+    .pad-lr {
+        padding-left: 0.50rem;
+        padding-right: 0.50rem;
+    }
+    .scroll-off {
+        display: block !important; 
+    }
+    .h1-page-title {
+        white-space: break-spaces;
+    }
+    .form-sec-grid {
+        display: block;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px){
+    .h1-page-title {
+        white-space: break-spaces;
+    }
+    .pad-lr {
+        padding-left: 0.50rem;
+        padding-right: 0.50rem;
+    }
+    .hero-image img {
+        width: 45vw;
+    }
+    
+    /* Home Service Card Section */
+    .service-card-list {
+        display: grid; grid-template-columns: 1fr 1fr;
+    }
+    .service-card-list .pad-lr-card {
+        padding-right: 2.2rem;
+        padding-bottom: 2.2rem;
+    }
+    /* Home Service Card Section */ 
+    /* List of services Btn Section */
+    .service-btns > div {
+        width: 380px;
+    }
+    /* List of services Btn Section */
+    
+    /* Award Winnning Section */
+    .outlook-title h6 {
+        font-size: 18px;
+    }
+    .outlook-grid .outbound-link p {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    .outlook-title p {
+        margin-bottom: auto;
+    }
+    /* Award Winnning Section */
+    .scroll-off {
+        display: grid; grid-template-columns: 1fr 1fr;
+    }
+    /* Footer Section */
+    .footer-grid-2 {
+        display: block;
+    }
+    .contact-links{
+        display: grid;
+    }
+    /* Footer Section */
+    /*Google Form*/
+    .form-font .card {
+        width: inherit;
+    }
+    .form-bg {
+        background: none;
+    }
+    .form-sec-grid {
+        display: block;
+    }
+    /*Google Form*/
+}
+@media (min-width:769px) and (max-width:1024px){
+    .scroll-off {
+        display: grid; grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px){
+    p {
+        font-size: 1.25vw;
+        line-height: 1.6em;
+    }
+
+    /* Home Service Card Section */
+    .service-card-list .card ul {
+        inline-size: inherit;
+    }
+    /* Home Service Card Section */
+    /* List of services Btn Section */
+    .service-btns > div h4 {
+        font-size: 1.5vw;
+    }
+    /* List of services Btn Section */
+
+    /* Award Winnning Section */
+    .outlook-title h6 {
+        font-size: 28px;
+    }
+    .outlook-grid .outbound-link p {
+        overflow-wrap: break-word;
+        display: inline-flex;
+    }
+    /* Award Winnning Section */
+}
+@media (min-width:1441px) and (max-width:2560px){
+    
+    p {
+        font-size: 1.35vw;
+        line-height: 1.6em;
+    }
+    .hero-image img {
+        width: 35vw;
+    }
+    .header-main {
+        height: 5.313em;
+    }
+    .header-logo .logo-width {
+        width: auto;
+    }
+    /* .header-menu .menu-main ul li {
+        font-size: 24px;
+    } */
+
+    /* Home Service Card Section */
+    .service-card-list > div > .card h5 { 
+        font-size: 2.25rem;
+        line-height: initial;
+        border-bottom: 1px solid;
+    }
+    .service-card-list .card ul {
+        font-size: 2rem;
+        line-height: 3rem;
+        inline-size: max-content;
+    }
+    /* Home Service Card Section */
+
+    /* List of services Btn Section */
+    .service-btns > div {
+        width: 610px;
+    }
+    .service-btns > div h4 {
+        font-size: 1.5vw;
+    }
+    .service-btns .card > div ul {
+        font-size: 25px;
+        line-height: 2;
+    }
+    .service-btns .card .card-video .yt-iframe{
+        height: 420px !important;
+    }
+    /* List of services Btn Section */
+    
+    /* Award Winnning Section */
+    .outlook-logo img {
+        width: 27rem;
+    }
+    .outlook-title h6 {
+        font-size: 50px;
+        line-height: 1;
+    }
+    .outlook-title p {
+        font-size: 30px;
+    }
+    .outlook-grid .outbound-link p {
+        font-size: 22px;
+    }
+    /* Award Winnning Section */
+
+    /* Footer Section */
+    .footer-grid .footer-clm h3 {
+        font-size: 32px;
+    }
+    .footer-grid .footer-clm p {
+        font-size: 23px;
+    }
+    .contact-links h5 {
+        font-size: 24px;
+    }
+    .footer-grid .footer-clm .footer-brand h4 {
+        font-size: 28px;
+    }
+    .copyright {
+        font-size: 22px;
+    }
+    /* Footer Section */
+
+}
+
+
+
+
+
+
